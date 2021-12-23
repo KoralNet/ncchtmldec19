@@ -9,7 +9,7 @@ function getSelected(select) {
             selectdValue.push(select.options[optionIndex].value);
         }
     }
-    console.log(selectedValue)
+
     return selectdValue;
 
 }
@@ -23,5 +23,7 @@ registrationForm.onsubmit = function(event) {
     let interests = getSelected(document.getElementById("InterestSelect"));
 
     const data = { name, DOB, darkMode, interests }
-        // console.log(data)
+    console.log(data);
+    localStorage.setItem("userInfo", JSON.stringify(data))
+
 };
