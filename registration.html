@@ -18,8 +18,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="registration.html">Registration</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -34,48 +34,51 @@
 
             </ul>
             <!-- <span class="navbar-text">
-                    Navbar text with an inline element
-                  </span> -->
+                Navbar text with an inline element
+            </span> -->
         </div>
     </nav>
-    <div class="d-flex justify-content-center">
-        <div class="w-25 p-3 h-25 d-inline-block" style="background-color: #eee;">
+    <form id="registration-form">
+        <div class="d-flex justify-content-center">
+            <div class="w-25 p-3 h-25 d-inline-block" style="background-color: #eee;">
 
 
-            <div class="registration-table">
-                <h1> Registration Form -External </h1>
-            </div>
+                <div class="registration-table">
+                    <h1> Registration Form -External </h1>
+                </div>
 
-            <div class="form-group">
-                <label for="exampleInputEmail1"> Name </label>
-                <input type='text' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Name">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <div class="form-group" id="Name">
+                    <label for="exampleInputEmail1"> Name </label>
+                    <input type='text' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Name">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+                </div>
+                <div class="form-group" id="Interest">
+                    <label for="exampleFormControlSelect2">Interest</label>
+                    <select class="form-control">
+                        <option value="Oral">Oral</option>
+                        <option value="Hard">Hard</option>
+                        <option value="Fast">Fast</option>
+                        <option value="Slow">Slow</option>
+                    </select>
+                </div>
+                <div class="form-group" id="DateOfBirth">
+                    <label> Date of Birth </label>
+                    <input type='date' placeholder="Enter your DOB">
+                </div>
+                <div class="form-check" id="Checkbox">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label"> Dark Mode </label>
+                </div>
+                <div class="form-group" id="Submit">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
 
             </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect2">Interest</label>
-                <select class="form-control" id="exampleFormControlSelect2">
-			<option value="Oral">Oral</option>
-			<option value="Hard">Hard</option>
-			<option value="Fast">Fast</option>
-			<option value="Slow">Slow</option>
-		</select>
-            </div>
-            <div class="form-group">
-                <label> Date of Birth </label>
-                <input type='date' placeholder="Enter your DOB">
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox">
-                <label class="form-check-label"> Dark Mode </label>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-
-
         </div>
-    </div>
+    </form>
+    <script src="./registration.js"></script>
 </body>
 
 
